@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B71B47127ECB15500BF3141 /* WordsWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B71B47727ECB15500BF3141 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B71B47527ECB15500BF3141 /* Interface.storyboard */; };
+		3B71B47927ECB15900BF3141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71B47827ECB15900BF3141 /* Assets.xcassets */; };
+		3B71B47F27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B71B47E27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B71B48427ECB15A00BF3141 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71B48327ECB15A00BF3141 /* InterfaceController.swift */; };
+		3B71B48627ECB15A00BF3141 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71B48527ECB15A00BF3141 /* ExtensionDelegate.swift */; };
+		3B71B48827ECB15A00BF3141 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71B48727ECB15A00BF3141 /* NotificationController.swift */; };
+		3B71B48A27ECB15A00BF3141 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B71B48927ECB15A00BF3141 /* ComplicationController.swift */; };
+		3B71B48C27ECB15D00BF3141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71B48B27ECB15D00BF3141 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B71B47227ECB15500BF3141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B71B46627ECB15500BF3141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B71B46F27ECB15500BF3141;
+			remoteInfo = "WordsWatch WatchKit App";
+		};
+		3B71B48027ECB15A00BF3141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B71B46627ECB15500BF3141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B71B47D27ECB15A00BF3141;
+			remoteInfo = "WordsWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B71B49427ECB15D00BF3141 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B71B47F27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71B49827ECB15D00BF3141 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3B71B47127ECB15500BF3141 /* WordsWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B71B46C27ECB15500BF3141 /* WordsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordsWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B71B47627ECB15500BF3141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3B71B47827ECB15900BF3141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B71B47E27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WordsWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B71B48327ECB15A00BF3141 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3B71B48527ECB15A00BF3141 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3B71B48727ECB15A00BF3141 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3B71B48927ECB15A00BF3141 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3B71B48B27ECB15D00BF3141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B71B48D27ECB15D00BF3141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B71B48E27ECB15D00BF3141 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B71B47B27ECB15A00BF3141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B71B46527ECB15500BF3141 = {
+			isa = PBXGroup;
+			children = (
+				3B71B47427ECB15500BF3141 /* WordsWatch WatchKit App */,
+				3B71B48227ECB15A00BF3141 /* WordsWatch WatchKit Extension */,
+				3B71B46D27ECB15500BF3141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B71B46D27ECB15500BF3141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B71B46C27ECB15500BF3141 /* WordsWatch.app */,
+				3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */,
+				3B71B47E27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B71B47427ECB15500BF3141 /* WordsWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3B71B47527ECB15500BF3141 /* Interface.storyboard */,
+				3B71B47827ECB15900BF3141 /* Assets.xcassets */,
+			);
+			path = "WordsWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		3B71B48227ECB15A00BF3141 /* WordsWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B71B48327ECB15A00BF3141 /* InterfaceController.swift */,
+				3B71B48527ECB15A00BF3141 /* ExtensionDelegate.swift */,
+				3B71B48727ECB15A00BF3141 /* NotificationController.swift */,
+				3B71B48927ECB15A00BF3141 /* ComplicationController.swift */,
+				3B71B48B27ECB15D00BF3141 /* Assets.xcassets */,
+				3B71B48D27ECB15D00BF3141 /* Info.plist */,
+				3B71B48E27ECB15D00BF3141 /* PushNotificationPayload.apns */,
+			);
+			path = "WordsWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B71B46B27ECB15500BF3141 /* WordsWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B71B49927ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch" */;
+			buildPhases = (
+				3B71B46A27ECB15500BF3141 /* Resources */,
+				3B71B49827ECB15D00BF3141 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B71B47327ECB15500BF3141 /* PBXTargetDependency */,
+			);
+			name = WordsWatch;
+			productName = WordsWatch;
+			productReference = 3B71B46C27ECB15500BF3141 /* WordsWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3B71B46F27ECB15500BF3141 /* WordsWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B71B49527ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch WatchKit App" */;
+			buildPhases = (
+				3B71B46E27ECB15500BF3141 /* Resources */,
+				3B71B49427ECB15D00BF3141 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B71B48127ECB15A00BF3141 /* PBXTargetDependency */,
+			);
+			name = "WordsWatch WatchKit App";
+			productName = "WordsWatch WatchKit App";
+			productReference = 3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3B71B47D27ECB15A00BF3141 /* WordsWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B71B49127ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch WatchKit Extension" */;
+			buildPhases = (
+				3B71B47A27ECB15A00BF3141 /* Sources */,
+				3B71B47B27ECB15A00BF3141 /* Frameworks */,
+				3B71B47C27ECB15A00BF3141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WordsWatch WatchKit Extension";
+			productName = "WordsWatch WatchKit Extension";
+			productReference = 3B71B47E27ECB15A00BF3141 /* WordsWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B71B46627ECB15500BF3141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					3B71B46B27ECB15500BF3141 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3B71B46F27ECB15500BF3141 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3B71B47D27ECB15A00BF3141 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 3B71B46927ECB15500BF3141 /* Build configuration list for PBXProject "WordsWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B71B46527ECB15500BF3141;
+			productRefGroup = 3B71B46D27ECB15500BF3141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B71B46B27ECB15500BF3141 /* WordsWatch */,
+				3B71B46F27ECB15500BF3141 /* WordsWatch WatchKit App */,
+				3B71B47D27ECB15A00BF3141 /* WordsWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B71B46A27ECB15500BF3141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71B46E27ECB15500BF3141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B71B47927ECB15900BF3141 /* Assets.xcassets in Resources */,
+				3B71B47727ECB15500BF3141 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B71B47C27ECB15A00BF3141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B71B48C27ECB15D00BF3141 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B71B47A27ECB15A00BF3141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B71B48827ECB15A00BF3141 /* NotificationController.swift in Sources */,
+				3B71B48A27ECB15A00BF3141 /* ComplicationController.swift in Sources */,
+				3B71B48627ECB15A00BF3141 /* ExtensionDelegate.swift in Sources */,
+				3B71B48427ECB15A00BF3141 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B71B47327ECB15500BF3141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B71B46F27ECB15500BF3141 /* WordsWatch WatchKit App */;
+			targetProxy = 3B71B47227ECB15500BF3141 /* PBXContainerItemProxy */;
+		};
+		3B71B48127ECB15A00BF3141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B71B47D27ECB15A00BF3141 /* WordsWatch WatchKit Extension */;
+			targetProxy = 3B71B48027ECB15A00BF3141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B71B47527ECB15500BF3141 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B71B47627ECB15500BF3141 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B71B48F27ECB15D00BF3141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B71B49027ECB15D00BF3141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B71B49227ECB15D00BF3141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordsWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WordsWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3B71B49327ECB15D00BF3141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordsWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WordsWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3B71B49627ECB15D00BF3141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WordsWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WordsWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3B71B49727ECB15D00BF3141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WordsWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WordsWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3B71B49A27ECB15D00BF3141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B71B49B27ECB15D00BF3141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZS6GWM7ZN;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antk.WordsWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B71B46927ECB15500BF3141 /* Build configuration list for PBXProject "WordsWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71B48F27ECB15D00BF3141 /* Debug */,
+				3B71B49027ECB15D00BF3141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B71B49127ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71B49227ECB15D00BF3141 /* Debug */,
+				3B71B49327ECB15D00BF3141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B71B49527ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71B49627ECB15D00BF3141 /* Debug */,
+				3B71B49727ECB15D00BF3141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B71B49927ECB15D00BF3141 /* Build configuration list for PBXNativeTarget "WordsWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B71B49A27ECB15D00BF3141 /* Debug */,
+				3B71B49B27ECB15D00BF3141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B71B46627ECB15500BF3141 /* Project object */;
+}
