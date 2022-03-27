@@ -11,6 +11,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var wordLabel: WKInterfaceLabel!
+    @IBOutlet weak var comprehendsButton: WKInterfaceButton!
+    @IBOutlet weak var unconfidentsButton: WKInterfaceButton!
+    
     override func awake(withContext context: Any?) {
         
     }

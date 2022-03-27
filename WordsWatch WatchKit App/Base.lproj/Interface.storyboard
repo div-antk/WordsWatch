@@ -11,7 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WordsWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="104" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
+                        <label width="1" height="104" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
                             <fontDescription key="font" type="boldSystem" pointSize="12"/>
                         </label>
                         <group alignment="left" id="kfd-Pv-dJU">
@@ -27,6 +27,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="comprehendsButton" destination="gzE-Cl-Gaa" id="eG4-Cb-wpE"/>
+                        <outlet property="unconfidentsButton" destination="xOi-3o-H4u" id="1nM-Rj-TNi"/>
+                        <outlet property="wordLabel" destination="bea-az-IDv" id="DIT-4p-FCC"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
