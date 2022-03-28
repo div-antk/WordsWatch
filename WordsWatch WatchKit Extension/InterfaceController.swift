@@ -14,9 +14,10 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
     @IBOutlet weak var comprehendsButton: WKInterfaceButton!
     @IBOutlet weak var unconfidentsButton: WKInterfaceButton!
-    
-    override func awake(withContext context: Any?) {
         
+    override func awake(withContext context: Any?) {
+        let word = getWord()
+        wordLabel.setText(word)
     }
     
     override func willActivate() {
@@ -27,4 +28,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
+    func getWord() -> String {
+        return WordList().unconfidents.randomElement() ?? ""
+    }
 }
