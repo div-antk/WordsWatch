@@ -16,8 +16,28 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var unconfidentsButton: WKInterfaceButton!
         
     override func awake(withContext context: Any?) {
+        
         let word = getWord()
-        wordLabel.setText(word)
+       
+        let attributes: [NSAttributedString.Key : Any] = [
+            .font : UIFont.boldSystemFont(ofSize: CGFloat(fontSizeJudge(word: word)))
+        ]
+        
+        let attributedString = NSAttributedString(string: word, attributes: attributes)
+        wordLabel.setAttributedText(attributedString)
+    }
+    
+    private func fontSizeJudge(word: String) -> Int {
+        
+        let wordCount = word.count
+        
+        if wordCount > 12 {
+            return 20
+        } else if wordCount > 8 {
+            return 32
+        } else {
+            return 40
+        }
     }
     
     override func willActivate() {
