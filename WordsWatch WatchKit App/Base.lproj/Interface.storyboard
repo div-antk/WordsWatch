@@ -11,10 +11,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WordsWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="104" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
-                            <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                        <label width="1" height="0.69999999999999996" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
+                            <fontDescription key="font" type="boldSystem" pointSize="20"/>
                         </label>
-                        <group alignment="left" id="kfd-Pv-dJU">
+                        <group height="0.29999999999999999" alignment="left" id="kfd-Pv-dJU">
                             <items>
                                 <button width="0.5" alignment="left" title="💪" id="gzE-Cl-Gaa">
                                     <color key="backgroundColor" red="0.0" green="0.31764705879999999" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
