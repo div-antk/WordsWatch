@@ -19,17 +19,21 @@
                                 <button width="0.5" alignment="left" title="💪" id="gzE-Cl-Gaa">
                                     <color key="backgroundColor" red="0.0" green="0.31764705879999999" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="comprehendsButton" destination="AgC-eL-Hgc" id="wiX-sQ-Ibe"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" alignment="left" title="🤔" id="xOi-3o-H4u">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="20"/>
+                                    <connections>
+                                        <action selector="unconfidentsButton" destination="AgC-eL-Hgc" id="C21-aI-pTu"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="comprehendsButton" destination="gzE-Cl-Gaa" id="eG4-Cb-wpE"/>
-                        <outlet property="unconfidentsButton" destination="xOi-3o-H4u" id="1nM-Rj-TNi"/>
                         <outlet property="wordLabel" destination="bea-az-IDv" id="DIT-4p-FCC"/>
                     </connections>
                 </controller>
