@@ -17,10 +17,10 @@
                         <group height="0.29999999999999999" alignment="left" id="kfd-Pv-dJU">
                             <items>
                                 <button width="0.5" alignment="left" title="💪" id="gzE-Cl-Gaa">
-                                    <color key="backgroundColor" red="0.0" green="0.31764705879999999" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901957" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="20"/>
                                     <connections>
-                                        <action selector="comprehendsButton" destination="AgC-eL-Hgc" id="wiX-sQ-Ibe"/>
+                                        <action selector="confidentsButton" destination="AgC-eL-Hgc" id="wiX-sQ-Ibe"/>
                                     </connections>
                                 </button>
                                 <button width="0.5" alignment="left" title="🤔" id="xOi-3o-H4u">

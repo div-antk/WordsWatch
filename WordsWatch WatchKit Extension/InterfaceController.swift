@@ -18,7 +18,7 @@ class InterfaceController: WKInterfaceController {
         getWord()
     }
     
-    @IBAction func comprehendsButton() {
+    @IBAction func confidentsButton() {
         getWord()
     }
     
