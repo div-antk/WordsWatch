@@ -12,18 +12,26 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
+    
+    // 自信あるリスト
+    var confidents:[String] = []
 
     override func awake(withContext context: Any?) {
         
-        getWord()
+        setWord(word: getWord())
     }
     
     @IBAction func confidentsButton() {
-        getWord()
+        let word = getWord()
+        
+        // 単語を自信あるリストに追加
+        confidents.append(word)
+
+        setWord(word: word)
     }
     
     @IBAction func unconfidentsButton() {
-        getWord()
+        setWord(word: getWord())
     }
     
     private func fontSizeJudge(word: String) -> Int {
@@ -59,9 +67,11 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
-    func getWord() {
-        let word = WordList().unconfidents.randomElement() ?? ""
-        
+    func getWord() -> String {
+        return WordList().unconfidents.randomElement() ?? ""
+    }
+    
+    func setWord(word: String) {
         let attributes: [NSAttributedString.Key : Any] = [
             .font : UIFont.boldSystemFont(ofSize: CGFloat(fontSizeJudge(word: word)))
         ]

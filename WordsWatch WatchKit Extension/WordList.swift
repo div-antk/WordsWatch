@@ -7,10 +7,10 @@
 
 import Foundation
 
-//let comprehends = []
 
 class WordList {
    
+    
     let unconfidents = [
     "abide",
     "aboard",
