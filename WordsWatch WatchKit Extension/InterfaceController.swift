@@ -30,12 +30,24 @@ class InterfaceController: WKInterfaceController {
         
         let wordCount = word.count
         
-        if wordCount > 12 {
+        if wordCount >= 17 {
+            return 16
+        } else if wordCount >= 14 {
+            return 18
+        } else if wordCount >= 13 {
             return 20
-        } else if wordCount > 8 {
-            return 32
+        } else if wordCount >= 12 {
+            return 22
+        } else if wordCount >= 11 {
+            return 24
+        } else if wordCount >= 10 {
+            return 26
+        } else if wordCount >= 9 {
+            return 28
+        } else if wordCount >= 8 {
+            return 30
         } else {
-            return 40
+            return 32
         }
     }
     
