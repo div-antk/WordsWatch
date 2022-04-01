@@ -34,6 +34,9 @@
                         </group>
                         <button width="1" height="30" alignment="left" title="📋" id="zfJ-Iq-ijw">
                             <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901957" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="GlP-FU-DP3" kind="push" id="azr-uD-cnj"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
@@ -46,9 +49,19 @@
         <!--Interface Controller-->
         <scene sceneID="Ypb-4Y-XKM">
             <objects>
-                <controller id="GlP-FU-DP3"/>
+                <controller id="GlP-FU-DP3">
+                    <items>
+                        <table alignment="left" id="xqA-eV-HZL">
+                            <items>
+                                <tableRow id="L2q-zH-q24">
+                                    <group key="rootItem" width="1" alignment="left" id="2QR-tU-K4A"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="468" y="330"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
