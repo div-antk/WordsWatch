@@ -35,7 +35,7 @@
                         <button width="1" height="30" alignment="left" title="📋" id="zfJ-Iq-ijw">
                             <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901957" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="GlP-FU-DP3" kind="push" id="azr-uD-cnj"/>
+                                <segue destination="GlP-FU-DP3" kind="push" identifier="" id="azr-uD-cnj"/>
                             </connections>
                         </button>
                     </items>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Confidents-->
         <scene sceneID="Ypb-4Y-XKM">
             <objects>
-                <controller id="GlP-FU-DP3">
+                <controller identifier="ConfidentsInterfaceController" title="Confidents" id="GlP-FU-DP3" customClass="ConfidentsInterfaceController" customModule="WordsWatch_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="xqA-eV-HZL">
                             <items>
