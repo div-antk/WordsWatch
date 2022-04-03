@@ -10,7 +10,11 @@ import WatchKit
 
 class ConfidentsInterfaceController: WKInterfaceController {
 
-    override func awake(withContext context: Any?) {
+    @IBOutlet weak var confidentsTable: WKInterfaceTable!
     
+    let words = ["aaa", "bbb", "ccc"]
+    
+    override func awake(withContext context: Any?) {
+        confidentsTable.setNumberOfRows(words.count, withRowType: "hoge")
     }
 }

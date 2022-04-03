@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Confidents-->
+        <!--ConfidentsInterfaceController-->
         <scene sceneID="Ypb-4Y-XKM">
             <objects>
-                <controller identifier="ConfidentsInterfaceController" title="Confidents" id="GlP-FU-DP3" customClass="ConfidentsInterfaceController" customModule="WordsWatch_WatchKit_Extension">
+                <controller identifier="ConfidentsInterfaceController" id="GlP-FU-DP3" customClass="ConfidentsInterfaceController" customModule="WordsWatch_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="xqA-eV-HZL">
                             <items>
@@ -59,9 +59,12 @@
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="confidentsTable" destination="xqA-eV-HZL" id="E0s-vI-aLk"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="330"/>
+            <point key="canvasLocation" x="433" y="330"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
