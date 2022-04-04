@@ -15,6 +15,6 @@ class ConfidentsInterfaceController: WKInterfaceController {
     let words = ["aaa", "bbb", "ccc"]
     
     override func awake(withContext context: Any?) {
-        confidentsTable.setNumberOfRows(words.count, withRowType: "hoge")
+        confidentsTable.setNumberOfRows(words.count, withRowType: "MainRowType")
     }
 }
