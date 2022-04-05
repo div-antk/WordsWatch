@@ -15,6 +15,7 @@ class ConfidentsInterfaceController: WKInterfaceController {
     let words = ["aaa", "bbb", "ccc"]
     
     override func awake(withContext context: Any?) {
+        // TableViewのIdentitfierを指定
         confidentsTable.setNumberOfRows(words.count, withRowType: "MainRowType")
     }
 }
