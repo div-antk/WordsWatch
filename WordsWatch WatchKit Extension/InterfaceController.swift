@@ -23,7 +23,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func confidentsButton() {
         let word = getWord()
-        
+
         // 単語を自信あるリストに追加
         confidents.append(word)
 
@@ -32,6 +32,10 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func unconfidentsButton() {
         setWord(word: getWord())
+    }
+    
+    @IBAction func toConfidentsListButton() {
+        pushController(withName: "ConfidentsInterfaceController", context: confidents)
     }
     
     private func fontSizeJudge(word: String) -> Int {
@@ -79,4 +83,5 @@ class InterfaceController: WKInterfaceController {
         let attributedString = NSAttributedString(string: word, attributes: attributes)
         wordLabel.setAttributedText(attributedString)
     }
+    
 }
