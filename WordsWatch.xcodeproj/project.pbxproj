@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B05165227F7BC390046469C /* ConfidentsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05165127F7BC390046469C /* ConfidentsInterfaceController.swift */; };
+		3B05165A280062C10046469C /* WordRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B051659280062C10046469C /* WordRowController.swift */; };
 		3B71B47127ECB15500BF3141 /* WordsWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B71B47727ECB15500BF3141 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B71B47527ECB15500BF3141 /* Interface.storyboard */; };
 		3B71B47927ECB15900BF3141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B71B47827ECB15900BF3141 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		3B05165127F7BC390046469C /* ConfidentsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidentsInterfaceController.swift; sourceTree = "<group>"; };
+		3B051659280062C10046469C /* WordRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRowController.swift; sourceTree = "<group>"; };
 		3B71B46C27ECB15500BF3141 /* WordsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B71B47027ECB15500BF3141 /* WordsWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordsWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B71B47627ECB15500BF3141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				3B71B49C27EE0C6C00BF3141 /* WordList.swift */,
 				3B71B48327ECB15A00BF3141 /* InterfaceController.swift */,
 				3B05165127F7BC390046469C /* ConfidentsInterfaceController.swift */,
+				3B051659280062C10046469C /* WordRowController.swift */,
 				3B71B48527ECB15A00BF3141 /* ExtensionDelegate.swift */,
 				3B71B48727ECB15A00BF3141 /* NotificationController.swift */,
 				3B71B48927ECB15A00BF3141 /* ComplicationController.swift */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B05165227F7BC390046469C /* ConfidentsInterfaceController.swift in Sources */,
+				3B05165A280062C10046469C /* WordRowController.swift in Sources */,
 				3B71B48827ECB15A00BF3141 /* NotificationController.swift in Sources */,
 				3B71B48A27ECB15A00BF3141 /* ComplicationController.swift in Sources */,
 				3B71B48627ECB15A00BF3141 /* ExtensionDelegate.swift in Sources */,
