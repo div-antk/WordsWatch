@@ -12,7 +12,6 @@ class ConfidentsInterfaceController: WKInterfaceController {
     @IBOutlet weak var confidentsTable: WKInterfaceTable!
     
     var confidents:[String] = []
-    var items = ["name" : "udon"]
     
     override func awake(withContext context: Any?) {
         
@@ -20,11 +19,9 @@ class ConfidentsInterfaceController: WKInterfaceController {
         // TableViewのIdentitfierを指定
         confidentsTable.setNumberOfRows(confidents.count, withRowType: "MainRowType")
         
-        for(index, item) in items.enumerated() {
+        for(index, word) in confidents.enumerated() {
             let row = confidentsTable.rowController(at: index) as! WordRowController
-            row.wordLabel.setText(item.value)
-
-//            row.wordLabel.setText(item)
+            row.wordLabel.setText(word)
         }
     }
 }
