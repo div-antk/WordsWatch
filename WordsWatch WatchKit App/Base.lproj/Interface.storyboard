@@ -56,7 +56,9 @@
                                 <tableRow identifier="MainRowType" id="L2q-zH-q24" customClass="WordRowController" customModule="WordsWatch_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="2QR-tU-K4A">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="Label" id="M6G-hC-Tpw"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="M6G-hC-Tpw">
+                                                <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
