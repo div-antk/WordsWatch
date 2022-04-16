@@ -28,17 +28,17 @@ class ConfidentsInterfaceController: WKInterfaceController {
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         
-        let delete = WKAlertAction.init(title: "YES",
+        let delete = WKAlertAction.init(title: "🤔",
                                               style: .default,
                                               handler: {
             table.removeRows(at: IndexSet(integer: rowIndex))
         })
         
-        let cancel = WKAlertAction.init(title: "NO",
+        let cancel = WKAlertAction.init(title: "💪",
                                         style: .cancel,
                                               handler: {
         })
         
-        presentAlert(withTitle: confidents[rowIndex], message: "🤔", preferredStyle: .alert, actions: [delete, cancel])
+        presentAlert(withTitle: confidents[rowIndex], message: "", preferredStyle: .sideBySideButtonsAlert, actions: [delete, cancel])
     }
 }
