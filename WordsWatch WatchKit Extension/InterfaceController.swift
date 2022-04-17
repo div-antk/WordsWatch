@@ -13,6 +13,8 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
     
+    var usersDefaults = UserDefaults.standard
+    
     // 自信あるリスト
     var confidents:[String] = []
 
@@ -26,7 +28,8 @@ class InterfaceController: WKInterfaceController {
 
         // 単語を自信あるリストに追加
         confidents.append(word)
-
+        usersDefaults.set(confidents, forKey: "confidentsData")
+        
         setWord(word: word)
     }
     
