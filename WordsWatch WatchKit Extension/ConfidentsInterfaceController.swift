@@ -12,22 +12,16 @@ class ConfidentsInterfaceController: WKInterfaceController {
     @IBOutlet weak var confidentsTable: WKInterfaceTable!
     
     var usersDefaults = UserDefaults.standard
-//    var confidents:[String] = []
+    var confidents:[String] = []
     
     override func awake(withContext context: Any?) {
         
-        let getConfidents:[String] = usersDefaults.array(forKey: "confidentsData") as! [String]
+        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
 
-//        confidents = context as! [String]
         // TableViewのIdentitfierを指定
-        confidentsTable.setNumberOfRows(getConfidents.count, withRowType: "MainRowType")
+        confidentsTable.setNumberOfRows(confidents.count, withRowType: "MainRowType")
         
-//        for(index, word) in confidents.enumerated() {
-//            let row = confidentsTable.rowController(at: index) as! WordRowController
-//            row.wordLabel.setText(word)
-//        }
-        
-        for(index, word) in getConfidents.enumerated() {
+        for(index, word) in confidents.enumerated() {
             let row = confidentsTable.rowController(at: index) as! WordRowController
             row.wordLabel.setText(word)
         }
@@ -35,13 +29,13 @@ class ConfidentsInterfaceController: WKInterfaceController {
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         
-        var getConfidents:[String] = usersDefaults.array(forKey: "confidentsData") as! [String]
-
         let delete = WKAlertAction.init(title: "🤔",
                                               style: .default,
                                               handler: {
             table.removeRows(at: IndexSet(integer: rowIndex))
-            getConfidents.remove(at: rowIndex)
+            self.confidents.remove(at: rowIndex)
+            self.usersDefaults.set(self.confidents, forKey: "confidentsData")
+
         })
         
         let cancel = WKAlertAction.init(title: "💪",
@@ -49,6 +43,6 @@ class ConfidentsInterfaceController: WKInterfaceController {
                                               handler: {
         })
         
-        presentAlert(withTitle: getConfidents[rowIndex], message: "", preferredStyle: .sideBySideButtonsAlert, actions: [delete, cancel])
+        presentAlert(withTitle: confidents[rowIndex], message: "", preferredStyle: .sideBySideButtonsAlert, actions: [delete, cancel])
     }
 }
