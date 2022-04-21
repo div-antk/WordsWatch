@@ -9,6 +9,7 @@ import WatchKit
 
 class ConfidentsInterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var countLabel: WKInterfaceLabel!
     @IBOutlet weak var confidentsTable: WKInterfaceTable!
     
     var usersDefaults = UserDefaults.standard
@@ -18,6 +19,8 @@ class ConfidentsInterfaceController: WKInterfaceController {
         
         confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
 
+        countLabel.setText("おぼえたかず: \(String(confidents.count))")
+        
         // TableViewのIdentitfierを指定
         confidentsTable.setNumberOfRows(confidents.count, withRowType: "MainRowType")
         
@@ -35,7 +38,7 @@ class ConfidentsInterfaceController: WKInterfaceController {
             table.removeRows(at: IndexSet(integer: rowIndex))
             self.confidents.remove(at: rowIndex)
             self.usersDefaults.set(self.confidents, forKey: "confidentsData")
-
+            self.countLabel.setText("おぼえたかず: \(String(self.confidents.count))")
         })
         
         let cancel = WKAlertAction.init(title: "💪",

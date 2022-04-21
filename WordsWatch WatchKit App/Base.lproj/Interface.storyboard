@@ -51,6 +51,9 @@
             <objects>
                 <controller identifier="ConfidentsInterfaceController" id="GlP-FU-DP3" customClass="ConfidentsInterfaceController" customModule="WordsWatch_WatchKit_Extension">
                     <items>
+                        <label alignment="left" text="Label" id="0jC-d4-MnL">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
                         <table alignment="left" id="xqA-eV-HZL">
                             <items>
                                 <tableRow identifier="MainRowType" id="L2q-zH-q24" customClass="WordRowController" customModule="WordsWatch_WatchKit_Extension">
@@ -70,6 +73,7 @@
                     </items>
                     <connections>
                         <outlet property="confidentsTable" destination="xqA-eV-HZL" id="E0s-vI-aLk"/>
+                        <outlet property="countLabel" destination="0jC-d4-MnL" id="yMD-bn-A1q"/>
                     </connections>
                 </controller>
             </objects>
