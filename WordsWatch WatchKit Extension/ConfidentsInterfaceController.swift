@@ -32,7 +32,7 @@ class ConfidentsInterfaceController: WKInterfaceController {
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         
-        let delete = WKAlertAction.init(title: "🤔",
+        let delete = WKAlertAction.init(title: "忘",
                                               style: .default,
                                               handler: {
             table.removeRows(at: IndexSet(integer: rowIndex))
@@ -41,7 +41,7 @@ class ConfidentsInterfaceController: WKInterfaceController {
             self.countLabel.setText("おぼえたかず: \(String(self.confidents.count))")
         })
         
-        let cancel = WKAlertAction.init(title: "💪",
+        let cancel = WKAlertAction.init(title: "▼",
                                         style: .cancel,
                                               handler: {
         })
