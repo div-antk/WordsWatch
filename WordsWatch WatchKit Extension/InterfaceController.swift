@@ -21,11 +21,12 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         
         setWord(word: getWord())
+        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
     }
     
     @IBAction func confidentsButton() {
         let word = getWord()
-
+        print(word)
         // 単語を自信あるリストに追加
         confidents.append(word)
         usersDefaults.set(confidents, forKey: "confidentsData")
