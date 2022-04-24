@@ -14,28 +14,29 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
     
     var usersDefaults = UserDefaults.standard
-    
+    var word: String = ""
     // 自信あるリスト
     var confidents:[String] = []
 
     override func awake(withContext context: Any?) {
         
-        setWord(word: getWord())
+        word = getRandomWord()
+
+        setWord(word: word)
         confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
     }
     
     @IBAction func confidentsButton() {
-        let word = getWord()
-        print(word)
         // 単語を自信あるリストに追加
         confidents.append(word)
         usersDefaults.set(confidents, forKey: "confidentsData")
         
+        word = getRandomWord()
         setWord(word: word)
     }
     
     @IBAction func unconfidentsButton() {
-        setWord(word: getWord())
+        setWord(word: getRandomWord())
     }
     
     @IBAction func toConfidentsListButton() {
@@ -69,13 +70,14 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
     }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
 
-    func getWord() -> String {
+    func getRandomWord() -> String {
         return WordList().unconfidents.randomElement() ?? ""
     }
     
