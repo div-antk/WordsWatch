@@ -14,26 +14,27 @@
                         <label width="1" height="0.69999999999999996" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
                             <fontDescription key="font" type="boldSystem" pointSize="20"/>
                         </label>
-                        <group height="0.29999999999999999" alignment="left" id="kfd-Pv-dJU">
+                        <group height="0.40000000000000002" alignment="left" id="kfd-Pv-dJU">
                             <items>
-                                <button width="0.5" alignment="left" title="💪" id="gzE-Cl-Gaa">
-                                    <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901957" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                <button width="0.5" height="1" alignment="left" title="💪" id="gzE-Cl-Gaa">
+                                    <color key="backgroundColor" red="0.1137254902" green="0.47843137250000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="24"/>
                                     <connections>
                                         <action selector="confidentsButton" destination="AgC-eL-Hgc" id="wiX-sQ-Ibe"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" alignment="left" title="🤔" id="xOi-3o-H4u">
+                                <button width="0.5" height="1" alignment="left" title="🤔" id="xOi-3o-H4u">
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                    <fontDescription key="font" type="system" pointSize="24"/>
                                     <connections>
                                         <action selector="unconfidentsButton" destination="AgC-eL-Hgc" id="C21-aI-pTu"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <button width="1" height="30" alignment="left" title="📋" id="zfJ-Iq-ijw">
-                            <color key="backgroundColor" red="0.11372549019607843" green="0.47843137254901957" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button width="1" height="60" alignment="left" title="📋" id="zfJ-Iq-ijw">
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.46666666670000001" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="24"/>
                             <connections>
                                 <action selector="toConfidentsListButton" destination="AgC-eL-Hgc" id="jpD-OC-ABI"/>
                             </connections>
