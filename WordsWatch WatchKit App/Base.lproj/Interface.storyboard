@@ -11,10 +11,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WordsWatch_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <label height="0.10000000000000001" alignment="left" text="Label" id="p9J-It-Yre">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
                         <label width="1" height="0.69999999999999996" alignment="left" text="telecommunication" textAlignment="center" id="bea-az-IDv">
                             <fontDescription key="font" type="boldSystem" pointSize="20"/>
                         </label>
-                        <group height="0.40000000000000002" alignment="left" id="kfd-Pv-dJU">
+                        <group height="0.29999999999999999" alignment="left" id="kfd-Pv-dJU">
                             <items>
                                 <button width="0.5" height="1" alignment="left" title="💪" id="gzE-Cl-Gaa">
                                     <color key="backgroundColor" red="0.1137254902" green="0.47843137250000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,6 +44,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="countLabel" destination="p9J-It-Yre" id="HYP-LE-cd2"/>
                         <outlet property="wordLabel" destination="bea-az-IDv" id="DIT-4p-FCC"/>
                     </connections>
                 </controller>
