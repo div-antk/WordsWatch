@@ -8,18 +8,21 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
-    @IBOutlet weak var countLabel: WKInterfaceLabel!
     
     var usersDefaults = UserDefaults.standard
     var word: String = ""
+    
+    // 自信ないリスト
+    var unconfidents:[String] = []
     // 自信あるリスト
     var confidents:[String] = []
 
     override func awake(withContext context: Any?) {
+        
+        unconfidents = WordList().unconfidents
         
         word = getRandomWord()
 
@@ -44,6 +47,7 @@ class InterfaceController: WKInterfaceController {
         pushController(withName: "ConfidentsInterfaceController", context: confidents)
     }
     
+    // 単語の長さごとにサイズを修正し、端末で見切れないようにする
     private func fontSizeJudge(word: String) -> Int {
         
         let wordCount = word.count
@@ -78,11 +82,14 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
 
+    // 自信ないリストから単語をランダムで取得する
     func getRandomWord() -> String {
-        return WordList().unconfidents.randomElement() ?? ""
+        return unconfidents.randomElement() ?? ""
     }
     
+    // Labelに単語をセットする
     func setWord(word: String) {
+        
         let attributes: [NSAttributedString.Key : Any] = [
             .font : UIFont.boldSystemFont(ofSize: CGFloat(fontSizeJudge(word: word)))
         ]
