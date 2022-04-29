@@ -11,6 +11,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var wordLabel: WKInterfaceLabel!
+    @IBOutlet weak var countLabel: WKInterfaceLabel!
     
     var usersDefaults = UserDefaults.standard
     var word: String = ""
@@ -96,6 +97,8 @@ class InterfaceController: WKInterfaceController {
         
         let attributedString = NSAttributedString(string: word, attributes: attributes)
         wordLabel.setAttributedText(attributedString)
+        
+        countLabel.setText("あと: \(String(unconfidents.count))たんご")
     }
     
 }

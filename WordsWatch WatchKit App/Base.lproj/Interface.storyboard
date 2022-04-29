@@ -44,7 +44,7 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="countLabel" destination="p9J-It-Yre" id="HYP-LE-cd2"/>
+                        <outlet property="countLabel" destination="p9J-It-Yre" id="ffx-lm-aAr"/>
                         <outlet property="wordLabel" destination="bea-az-IDv" id="DIT-4p-FCC"/>
                     </connections>
                 </controller>
