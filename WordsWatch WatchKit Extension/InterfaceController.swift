@@ -28,7 +28,9 @@ class InterfaceController: WKInterfaceController {
         word = getRandomWord()
 
         setWord(word: word)
-        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
+        confidents = usersDefaults.array(forKey: "confidentsData") as? [String] ?? []
+        
+        comparison()
     }
     
     @IBAction func confidentsButton() {
@@ -76,7 +78,9 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
+
+        confidents = usersDefaults.array(forKey: "confidentsData") as? [String] ?? []
+
     }
     
     override func didDeactivate() {
@@ -100,5 +104,16 @@ class InterfaceController: WKInterfaceController {
         
         countLabel.setText("あと: \(String(unconfidents.count))たんご")
     }
-    
+   
+    func comparison() {
+        
+        unconfidents.forEach { word in
+//            if confidents.contains(word) {
+//                confidents.removeAll(where: word)
+//            }
+            confidents.removeAll(where: {
+                $0 == word
+            })
+        }
+    }
 }
