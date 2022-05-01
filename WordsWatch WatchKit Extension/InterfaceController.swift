@@ -26,9 +26,7 @@ class InterfaceController: WKInterfaceController {
         unconfidents = WordList().unconfidents
         
         word = getRandomWord()
-
         setWord(word: word)
-        confidents = usersDefaults.array(forKey: "confidentsData") as? [String] ?? []
         
         comparison()
     }
@@ -77,9 +75,11 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
 
-        confidents = usersDefaults.array(forKey: "confidentsData") as? [String] ?? []
+        // 初回起動時、UsersDefaultが空の場合に落ちないようにする
+        if let _ = usersDefaults.array(forKey: "confidentsData") as? [String] {
+            confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
+        }
 
     }
     

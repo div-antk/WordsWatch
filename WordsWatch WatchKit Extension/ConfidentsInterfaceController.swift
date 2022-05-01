@@ -17,9 +17,10 @@ class ConfidentsInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         
-//        confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
-        
-        confidents = usersDefaults.array(forKey: "confidentsData") as? [String] ?? [""]
+        // 初回起動時、UsersDefaultが空の場合に落ちないようにする
+        if let _ = usersDefaults.array(forKey: "confidentsData") as? [String] {
+            confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
+        }
         
         countLabel.setText("おぼえたかず: \(String(confidents.count))")
         
