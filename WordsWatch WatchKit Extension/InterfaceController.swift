@@ -27,8 +27,6 @@ class InterfaceController: WKInterfaceController {
         
         word = getRandomWord()
         setWord(word: word)
-        
-        comparison()
     }
     
     @IBAction func confidentsButton() {
@@ -37,6 +35,7 @@ class InterfaceController: WKInterfaceController {
         usersDefaults.set(confidents, forKey: "confidentsData")
         
         word = getRandomWord()
+        comparison()
         setWord(word: word)
     }
     
@@ -75,12 +74,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-
+        
         // 初回起動時、UsersDefaultが空の場合に落ちないようにする
         if let _ = usersDefaults.array(forKey: "confidentsData") as? [String] {
             confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
         }
-
+        comparison()
     }
     
     override func didDeactivate() {
@@ -102,18 +101,19 @@ class InterfaceController: WKInterfaceController {
         let attributedString = NSAttributedString(string: word, attributes: attributes)
         wordLabel.setAttributedText(attributedString)
         
-        countLabel.setText("あと: \(String(unconfidents.count))たんご")
     }
    
     func comparison() {
         
-        unconfidents.forEach { word in
-//            if confidents.contains(word) {
-//                confidents.removeAll(where: word)
-//            }
-            confidents.removeAll(where: {
-                $0 == word
-            })
+        confidents.forEach { word in
+            
+            // TODO: 単語を削除して戻ってきた場合の処理が必要
+            
+            if unconfidents.contains(word) {
+                unconfidents.remove(at: unconfidents.firstIndex(of: word)!)
+            }
         }
+        countLabel.setText("あと: \(String(unconfidents.count))たんご")
+
     }
 }
