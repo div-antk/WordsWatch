@@ -23,10 +23,6 @@ class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         
-        unconfidents = WordList().unconfidents
-        
-        word = getRandomWord()
-        setWord(word: word)
     }
     
     @IBAction func confidentsButton() {
@@ -75,10 +71,14 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         
-        // 初回起動時、UsersDefaultが空の場合に落ちないようにする
-        if let _ = usersDefaults.array(forKey: "confidentsData") as? [String] {
+        unconfidents = WordList().unconfidents
+        word = getRandomWord()
+        setWord(word: word)
+        
+        if (usersDefaults.array(forKey: "confidentsData") as? [String]) != nil {
             confidents = usersDefaults.array(forKey: "confidentsData") as! [String]
         }
+        
         comparison()
     }
     
@@ -106,9 +106,6 @@ class InterfaceController: WKInterfaceController {
     func comparison() {
         
         confidents.forEach { word in
-            
-            // TODO: 単語を削除して戻ってきた場合の処理が必要
-            
             if unconfidents.contains(word) {
                 unconfidents.remove(at: unconfidents.firstIndex(of: word)!)
             }
