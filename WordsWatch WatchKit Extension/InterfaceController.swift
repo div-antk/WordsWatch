@@ -33,10 +33,14 @@ class InterfaceController: WKInterfaceController {
         word = getRandomWord()
         comparison()
         setWord(word: word)
+        
+        WKInterfaceDevice.current().play(.directionUp)
     }
     
     @IBAction func unconfidentsButton() {
+        
         setWord(word: getRandomWord())
+        WKInterfaceDevice.current().play(.failure)
     }
     
     @IBAction func toConfidentsListButton() {
